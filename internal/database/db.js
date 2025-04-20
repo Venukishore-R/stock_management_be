@@ -1,4 +1,4 @@
-const { Sequelize} =  require('sequelize')
+const { Sequelize } = require('sequelize')
 const config = require('../../config/config')
 
 const db = new Sequelize(
@@ -7,7 +7,7 @@ const db = new Sequelize(
     config.password,
     {
         host: config.host,
-        dialect: 'mysql',
+        dialect: 'postgres',
     }
 );
 
